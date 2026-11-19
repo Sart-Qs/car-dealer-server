@@ -35,7 +35,7 @@ public class WebSecurityConfig {
 
         return source;
     }
-
+    //TODO Добавить csrf
     @Bean
     SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.cors(Customizer.withDefaults());
